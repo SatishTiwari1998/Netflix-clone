@@ -1,0 +1,28 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    background-color: blueviolet;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    z-index: 3300000000;
+  
+    padding: 5px;
+}
+ .div1 .child-div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 5px;
+    border: 3px solid pink;
+    z-index: 5;
+  
+}
