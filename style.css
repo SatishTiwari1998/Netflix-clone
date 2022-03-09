@@ -41,7 +41,7 @@ body{
     align-items: center;
     border-bottom: 0.6rem solid #111;
 }
-.banner:before{
+.banner::before{         /*used fo shadowing from top to bottom*/
     content: '';
     position: absolute;
     top: 0;
@@ -51,7 +51,7 @@ body{
     z-index: 1;
     background: linear-gradient(to bottom,#000,transparent);
 }
-.banner:after{                                                             /*shadowing*/
+.banner::after{      /*used fo shadowing from bottom to top*/            
     content: '';
     position: absolute;
     bottom: 0;
@@ -117,7 +117,7 @@ body{
     color:black ;
     border-radius: 2px;
     outline: none;
-    padding: 10px 10px 0 0;
+    padding: 10px 10px;
     min-width: 450px;
     height: 60px;
     align-items: center;
